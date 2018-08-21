@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+#Max = 39, 41, 43, 47, 49, 51, 45, 38, 37, 29, 27, 25
+#Min = 21, 23, 27, 28, 32, 35, 31, 28, 21, 19, 17, 18
+
+max=np.array([39, 41, 43, 47, 49, 51, 45, 38, 37, 29, 27, 25])
+min=np.array([21, 23, 27, 28, 32, 35, 31, 28, 21, 19, 17, 18])
+
+plt.figure(figsize=(12,5))
+plt.xlabel("Month")
+plt.ylabel("Temperature( in C)")
+plt.plot(max,linewidth=2,marker='o')
+plt.plot(min,linewidth=2,marker='o')
+plt.legend(('MAX','MIN'));
